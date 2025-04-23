@@ -46,7 +46,17 @@ const songsMap = {
   7: "Songs/Ye Ishq Hai.mp3",
   8: "Songs/Dil Lutiya.mp3",
   9: "Songs/Aaj Unse Milna Hai.mp3",
-  10: "Songs/Khulke Jeene Ka.mp3"
+  10: "Songs/Khulke Jeene Ka.mp3",
+  11: "Songs/Ishq.mp3",
+  12: "Songs/Bapu Zimidar.mp3",
+  13: "Songs/Kyon Ki Itna Pyar.mp3",
+  14: "Songs/Payal.mp3",
+  15: "Songs/Love Dose.mp3",
+  16: "Songs/Janam Janam.mp3",
+  17: "Songs/Kisi Ki Muskurahaton Pe.mp3",
+  18: "Songs/Deewana kar raha hai.mp3",
+  19: "Songs/Tu Hi Rab Tu Hi Dua.mp3",
+  20: "Songs/Laembadgini.mp3"
 };
 
 let currentSongId = null;
