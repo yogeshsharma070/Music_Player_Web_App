@@ -196,3 +196,10 @@ document.getElementById("prevBtn").addEventListener("mouseup", () => {
 });
 
 
+function playSongById(id) {
+  const card = document.querySelector(`.card[data-id="${id}"]`);
+  if (card) {
+    card.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+    card.click();
+  }
+}
