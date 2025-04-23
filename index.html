@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Images & Videos/icon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left" id="left">
+            <div class="home">
+                <div class="logo"><img src="Images & Videos/logo.svg" width="110" alt="logo"></div>
+                <ul>
+                    <li><img src="Images & Videos/home.svg" alt="Home">Home</li>
+                    <li><img src="Images & Videos/search.svg " alt="Search">Search</li>
+                </ul>
+            </div>
+            <div class="library">
+                <div class="heading">
+                    <img src="Images & Videos/playlist.svg" alt="" style="cursor: auto;">
+                    <h2>
+                        Recently Played
+                    </h2>
+                </div>
+
+                <div class="song_history">
+                    <ul id="historylist"></ul>
+                </div>
+                <div class="lfoot">
+                    <div class="left_footer">
+                        <div><a href="/"><span>Legal</span></a></div>
+                        <div><a href="/"><span>Privacy Center</span></a></div>
+                        <div><a href="/"><span>Privacy Policy</span></a>
+                        </div>
+                        <div><a href="/"><span>Cookies</span></a></div>
+                        <div><a href="/"><span>About Ads</span></a>
+                        </div>
+                        <div><a href="/"><span>Accessibility</span></a></div>
+                    </div>
+                </div>
+                <div class="language"><img src="Images & Videos/internet.png" width="13"> English</div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right_header">
+                <div class="nav">
+                    <svg id="left_scroll" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
+                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg id="right_scroll" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9 18L14.2929 12.7071C14.6262 12.3738 14.7929 12.2071 14.7929 12C14.7929 11.7929 14.6262 11.6262 14.2929 11.2929L9 6"
+                            stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="nav_buttons">
+                    <button class="signupbtn">Sign up</button>
+                    <button class="loginbtn">Log in</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylists">
+                <h1>Trending Songs</h1>
+                <div class="cardContainer" id="cardContainer">
+                    <audio id="audioPlayer" controls style="display: none;"></audio>
+                    <div class="card" data-id="1">
+                        <svg class="play" width="50" height="50" viewBox="0 0 100 100"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="48" fill="#1DB954" />
+                            <polygon points="40,30 70,50 40,70" fill="black" />
+                        </svg>
+                        <img src="Images & Videos/Cover1.jpeg" alt="">
+                        <h2>Tujh Mein Rab Dikhta Hai</h2>
+                        <p>Song by Jay Kadn and Roopkumar Rathod</p>
+                    </div>
+                    <div class="card" data-id="2">
+                        <svg class="play" width="50" height="50" viewBox="0 0 100 100"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="48" fill="#1DB954" />
+                            <polygon points="40,30 70,50 40,70" fill="black" />
+                        </svg>
+                        <img src="Images & Videos/Cover2.jpeg" alt="">
+                        <h2>Tum Hi Ho</h2>
+                        <p>Song by Arijit Singh
+                        </p>
+                    </div>
+                    <div class="card" data-id="3">
+                        <svg class="play" width="50" height="50" viewBox="0 0 100 100"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="48" fill="#1DB954" />
+                            <polygon points="40,30 70,50 40,70" fill="black" />
+                        </svg>
+                        <img src="Images & Videos/Cover3.jpeg" alt="">
+                        <h2>Khairiyat</h2>
+                        <p>Song by Arijit Singh</p>
+                    </div>
+                    <div class="card" data-id="4">
+                        <svg class="play" width="50" height="50" viewBox="0 0 100 100"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="48" fill="#1DB954" />
+                            <polygon points="40,30 70,50 40,70" fill="black" />
+                        </svg>
+                        <img src="Images & Videos/Cover4.jpeg" alt="">
+                        <h2>Teri Meri</h2>
+                        <p>Song by Rahat Fateh Ali Khan and Shreya Ghoshal</p>
+                    </div>
+                    <div class="card" data-id="5">
+                        <svg class="play" width="50" height="50" viewBox="0 0 100 100"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="48" fill="#1DB954" />
+                            <polygon points="40,30 70,50 40,70" fill="black" />
+                        </svg>
+                        <img src="Images & Videos/Cover5.jpeg" alt="">
+                        <h2>Main Agar Kahoon</h2>
+                        <p>Song by Shreya Ghoshal and Sonu Nigam</p>
+                    </div>
+                    <div class="card" data-id="6">
+                        <svg class="play" width="50" height="50" viewBox="0 0 100 100"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="48" fill="#1DB954" />
+                            <polygon points="40,30 70,50 40,70" fill="black" />
+                        </svg>
+                        <img src="Images & Videos/Cover6.jpeg" alt="">
+                        <h2>Ae Dil Hai Mushkil</h2>
+                        <p>Song by Arijit Singh</p>
+                    </div>
+                    <div class="card" data-id="7">
+                        <svg class="play" width="50" height="50" viewBox="0 0 100 100"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="48" fill="#1DB954" />
+                            <polygon points="40,30 70,50 40,70" fill="black" />
+                        </svg>
+                        <img src="Images & Videos/Cover7.jpeg" alt="">
+                        <h2>Ye Ishq Hai</h2>
+                        <p>Song by Irshad Kamil, Pritam Chakraborty, and Shreya Ghoshal</p>
+                    </div>
+                    <div class="card" data-id="8">
+                        <svg class="play" width="50" height="50" viewBox="0 0 100 100"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="48" fill="#1DB954" />
+                            <polygon points="40,30 70,50 40,70" fill="black" />
+                        </svg>
+                        <img src="Images & Videos/Cover8.jpeg" alt="">
+                        <h2>Dil Lutiya</h2>
+                        <p> Song by Apache Indian and Jazzy B</p>
+                    </div>
+                    <div class="card" data-id="9">
+                        <svg class="play" width="50" height="50" viewBox="0 0 100 100"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="48" fill="#1DB954" />
+                            <polygon points="40,30 70,50 40,70" fill="black" />
+                        </svg>
+                        <img src="Images & Videos/Cover9.jpeg" alt="">
+                        <h2>Aaj Unse Milna Hai</h2>
+                        <p>Song by Himesh Reshammiya and Shaan</p>
+                    </div>
+                    <div class="card" data-id="10">
+                        <svg class="play" width="50" height="50" viewBox="0 0 100 100"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="48" fill="#1DB954" />
+                            <polygon points="40,30 70,50 40,70" fill="black" />
+                        </svg>
+                        <img src="Images & Videos/Cover10.jpeg" alt="">
+                        <h2>Khulke Jeene Ka</h2>
+                        <p>Song by A. R. Rahman, Arijit Singh, and Shashaa Tirupati </p>
+                        </p>
+                    </div>
+
+                </div>
+
+                <div id="customPlayer" class="player">
+                    <div id="section1play">
+
+                        <div id="timeDisplay">
+                            <span id="currentTime">0:00</span> / <span id="totalDuration">0:00</span>
+                        </div>
+                        <div id="playbarbuttons">
+                            <button id="prevBtn" title="Previous">
+                                <img src="Images & Videos/prevsong.svg" alt="Previous" width="24">
+                            </button>
+
+                            <button id="playPauseBtn" title="Play">
+                                <img id="playIcon" src="Images & Videos/play.svg" alt="Play" width="24">
+                                <img id="pauseIcon" src="Images & Videos/pause.svg" alt="Pause" width="24"
+                                    style="display: none;">
+                            </button>
+
+                            <button id="nextBtn" title="Next">
+                                <img src="Images & Videos/nextsong.svg" alt="Next" width="24">
+                            </button>
+                        </div>
+
+                        <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="1" title="Volume">
+
+                    </div>
+                    <div id="section2play">
+                        <input type="range" id="progressBar" value="0" min="0" max="100">
+                    </div>
+                </div>
+
+            </div>
+
+            <script src="script.js"></script>
+</body>
+
+</html>
