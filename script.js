@@ -78,6 +78,7 @@ const currentTimeDisplay = document.getElementById("currentTime");
 const totalDurationDisplay = document.getElementById("totalDuration");
 
 function updateHistory(songTitle) {
+  document.getElementById("nosong").style.display="none";
   const newItem = document.createElement("li");
   newItem.textContent = songTitle;
   historyList.prepend(newItem);
